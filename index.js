@@ -19,16 +19,13 @@ function writeCards(guest, message){
 }
 
 function countDown(number){
-    let i = 0;
     while (number >= 0){
-        i++;
-        console.log(`This is the number ${number}`);
+        console.log(number);
         number--;
     }
-    return i;
 }
 
 wrapGifts(gifts);
 console.log(writeCards(["Ada", "Brendan", "Ali"], "birthday"));
-console.log(countDown(10));
-console.log(countDown (4));
+countDown(10);
+countDown (4);
